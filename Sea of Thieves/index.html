@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maiden+Orange&display=swap" rel="stylesheet">
+    <link href="favicon.ico" rel="icon">
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+    <title>Sea of Thieves Is My Main</title>
+</head>
+
+<body id="top" onload="loading()">
+    <div class="text-center" id="loading-screen">
+        <img id="loader" src="images/loader.png"/>
+    </div>
+    <div id="content">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img id="navbar-nav" src="images/navbar-nav.png"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <img src="images/toggler.gif">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="navtop" href="#top">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="navmid" href="#section-1">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="navgallery" href="#section-2">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="navbot" href="#section-3">Copyright</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col px-0">
+                    <div id="carousel" class="carousel carousel-fade slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/carousel-1.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carousel-2.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carousel-3.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carousel-4.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/carousel-5.png" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider text-center">
+                        <p id="quote" class="text-center"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="section-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center"><img class="img-fluid" src="images/csonti.png" id="csonti">
+                        <p>Meet the Sea Dogs and prove yourself in contests of treasure-hunting tenacity and seafaring
+                            skill! Competition is fierce, so bond with your crew and rise above your rivals in this
+                            exciting
+                            new way to make a name for yourself on the Sea of Thieves.</p>
+                    </div>
+
+                    <div class="col text-center"><img class="img-fluid" src="images/totem.png" id="totem">
+                        <p>The freedom of a pirate paradise unfolds before you! Find a crew or go solo, exploring the
+                            world
+                            at your own pace. Follow the threads of tall tales, make deals with Trading Companies and
+                            take
+                            your pick of Voyages leading to Pirate Legend glory.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="above-gallery" class="container-fluid px-0">
+            <img class="img-fluid" src="images/kitolto.png" alt="">
+        </div>
+        <div class="container-fluid" id="section-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div id="carouselgallery" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" id="gallery-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/carousel-6.png" class="d-block w-100" data-target="#modal-6"
+                                        data-toggle="modal" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/carousel-7.png" class="d-block w-100" data-target="#modal-7"
+                                        data-toggle="modal" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/carousel-8.png" class="d-block w-100" data-target="#modal-8"
+                                        data-toggle="modal" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/carousel-9.png" class="d-block w-100" data-target="#modal-9"
+                                        data-toggle="modal" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/carousel-10.png" class="d-block w-100" data-target="#modal-10"
+                                        data-toggle="modal" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/carousel-11.png" class="d-block w-100" data-target="#modal-11"
+                                        data-toggle="modal" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/carousel-12.png" class="d-block w-100" data-target="#modal-12"
+                                        data-toggle="modal" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" data-slide="prev" href="#carouselgallery" role="button">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" data-slide="next" href="#carouselgallery" role="button">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                        <div class="modal fade" id="modal-6" role="dialog" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <img class="img-fluid" src="images/carousel-6-full.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-7" role="dialog" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <img class="img-fluid" src="images/carousel-7-full.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-8" role="dialog" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <img class="img-fluid" src="images/carousel-8-full.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-9" role="dialog" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <img class="img-fluid" src="images/carousel-9-full.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-10" role="dialog" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <img class="img-fluid" src="images/carousel-10-full.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-11" role="dialog" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <img class="img-fluid" src="images/carousel-11-full.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-12" role="dialog" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <img class="img-fluid" src="images/carousel-12-full.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="footer"></div>
+        <footer class="footer" id="section-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="images/available.png"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/pegi.png" id="pegi">
+                    </div>
+                    <div class="col text-center">
+                        <img src="images/rare.png" id="rare">
+                    </div>
+                    <div class="col text-center">
+                        <img class="mx-auto" src="images/footerjobb.png" id="footerjobb">
+                    </div>
+                </div>
+				<div class="row">
+					<div class="col pb-3" id="copyright">
+						&copy; 2019 Sea of Thieves Is My Main, Horváth János
+					</div>
+				</div>
+            </div>
+        </footer>
+    </div>
+	
+    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
